@@ -1,0 +1,30 @@
+HARD CODING:
+
+These are the only user input combinations causing similarities:
+
+User input:			1 1
+Identical Rushes:	rush02	rush03	rush04
+The rectangle:		A		A		A
+
+User input:			1 X
+Identical Rushes:	rush02	rush04
+					A		A
+The rectangle:		B…		B…		(Doesn't matter how tall)
+					C		C
+
+User input:			X 1
+Identical Rushes:	rush03	rush04
+The rectangle:		AB…C	AB…C	(Doesn't matter how wide)
+
+The rectangles formed by special characters are always different, we don't need to take them into account at all.
+
+
+STRING COMPARISON:
+
+These patterns here hold the same information.
+
+pattern = "ABABCBC"
+pattern = "ABCBABC"
+pattern = "ABCBCBA"
+
+The meaning is basically: left top corner -> top middle -> right top corner -> sides (always the same) -> left bottom corner -> bottom middle -> right bottom cornerThe sides are always made by using the same characters and those are the only parts being multiplied.

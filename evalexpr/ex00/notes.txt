@@ -1,0 +1,17 @@
+
+• Create a program called eval_expr.
+• It’ll have a function eval_expr prototyped as follows :
+int eval_expr(char *str);
+• This function takes a characters string as argument. This string represents an
+arithmetic expression. For example :
+"3 + 42 * (1 - 2 / (3 + 4) - 1 % 21) + 1"
+• This expression must be calculated and its result must be returned.
+• The string passed as argument will be valid (no bugs, no bogus addresses, no letters
+or syntax errors, no division by zero, etc...).
+• The following five operators must be supported :
+◦ + for addition
+◦ - for subtraction
+◦ / for division
+◦ * for multiplication
+◦ % for modulo
+The function must also support any amount of brackets
